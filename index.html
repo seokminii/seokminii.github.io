@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>PROJECT</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div id="timer" class="b1 s3 p15">timer</div>
+
+    <div id="board" class="b1 s3 p16">leaderborad</div>
+
+    <div class="b1 s4 p18" type="button" id="22" onclick="Temp()">temp1</div>
+
+    <div class="b1 s4 p20" type="button">temp2</div>
+    <div class="b1 s4 p17" type="button" onclick="Check_target()">
+        <div id="a1" class="hidden">0</div>    
+        check
+    </div>
+
+    <input id="a2" class="b1 s4 p19" type="button" onclick="Play_the_game()" value="play">
+        
+    <div class="o-mid">
+        <h1>Test your Reflexes</h1>
+    </div>
+   
+    <ul>
+        <div class="b1 s1 p0">
+            <input id="t1"  class="b1 s2 p1"  type="button" onclick="Click_All(this.id)" value=1> <div id="1"  class="hidden"> 0 </div>
+            <input id="t2"  class="b1 s2 p2"  type="button" onclick="Click_All(this.id)" value=2> <div id="2"  class="hidden"> 0 </div>
+            <input id="t3"  class="b1 s2 p3"  type="button" onclick="Click_All(this.id)" value=3> <div id="3"  class="hidden"> 0 </div>
+            <input id="t4"  class="b1 s2 p4"  type="button" onclick="Click_All(this.id)" value=4> <div id="4"  class="hidden"> 0 </div>
+            <input id="t5"  class="b1 s2 p5"  type="button" onclick="Click_All(this.id)" value=5> <div id="5"  class="hidden"> 0 </div>
+            <input id="t6"  class="b1 s2 p6"  type="button" onclick="Click_All(this.id)" value=6> <div id="6"  class="hidden"> 0 </div>
+            <input id="t7"  class="b1 s2 p7"  type="button" onclick="Click_All(this.id)" value=7> <div id="7"  class="hidden"> 0 </div>
+            <input id="t8"  class="b1 s2 p8"  type="button" onclick="Click_All(this.id)" value=8> <div id="8"  class="hidden"> 0 </div>
+            <input id="t9"  class="b1 s2 p9"  type="button" onclick="Click_All(this.id)" value=9> <div id="9"  class="hidden"> 0 </div>
+            <input id="t10" class="b1 s2 p10" type="button" onclick="Click_All(this.id)" value=10><div id="10" class="hidden"> 0 </div>
+            <input id="t11" class="b1 s2 p11" type="button" onclick="Click_All(this.id)" value=11><div id="11" class="hidden"> 0 </div>
+            <input id="t12" class="b1 s2 p12" type="button" onclick="Click_All(this.id)" value=12><div id="12" class="hidden"> 0 </div>
+            <input id="t13" class="b1 s2 p13" type="button" onclick="Click_All(this.id)" value=13><div id="13" class="hidden"> 0 </div>
+            <input id="t14" class="b1 s2 p14" type="button" onclick="Click_All(this.id)" value=14><div id="14" class="hidden"> 0 </div>
+        </div>
+    </ul>
+
+    <div id="et1"  class="t1 p0_1" style="display:block;"></div>
+    <div id="et2"  class="t1 p1_1" style="display:block;"></div>
+    <div id="et3"  class="t1 p2_1" style="display:block;"></div>
+    <div id="et4"  class="t1 p3_1" style="display:block;"></div>
+    <div id="et5"  class="t1 p4_1" style="display:block;"></div>
+    <div id="et6"  class="t1 p5_1" style="display:block;"></div>
+    <div id="et7"  class="t1 p6_1" style="display:block;"></div>
+    <div id="et8"  class="t1 p7_1" style="display:block;"></div>
+    <div id="et9"  class="t1 p8_1" style="display:block;"></div>
+    <div id="et10" class="t1 p9_1" style="display:block;"></div>
+    <div id="et11" class="t1 p10_1"style="display:block;"></div>
+    <div id="et12" class="t1 p11_1"style="display:block;"></div>
+    <div id="et13" class="t1 p12_1"style="display:block;"></div>
+    <div id="et14" class="t1 p13_1"style="display:block;"></div>
+
+
+    <script src="main.js"></script>
+</body>
+</html>
+
+<!--
+
+<div class="b1 s1 p0">
+            <input id="t1"  class="b1 s2 p1"  type="button" onclick="Click_All(this.id)"> <div id="1"  class="hidden"> 0 </div>
+            <input id="t2"  class="b1 s2 p2"  type="button" onclick="Click_2()"> <div id="2"  class="hidden"> 0 </div>
+            <input id="t3"  class="b1 s2 p3"  type="button" onclick="Click_3()"> <div id="3"  class="hidden"> 0 </div>
+            <input id="t4"  class="b1 s2 p4"  type="button" onclick="Click_4()"> <div id="4"  class="hidden"> 0 </div>
+            <input id="t5"  class="b1 s2 p5"  type="button" onclick="Click_5()"> <div id="5"  class="hidden"> 0 </div>
+            <input id="t6"  class="b1 s2 p6"  type="button" onclick="Click_6()"> <div id="6"  class="hidden"> 0 </div>
+            <input id="t7"  class="b1 s2 p7"  type="button" onclick="Click_7()"> <div id="7"  class="hidden"> 0 </div>
+            <input id="t8"  class="b1 s2 p8"  type="button" onclick="Click_8()"> <div id="8"  class="hidden"> 0 </div>
+            <input id="t9"  class="b1 s2 p9"  type="button" onclick="Click_9()"> <div id="9"  class="hidden"> 0 </div>
+            <input id="t10" class="b1 s2 p10" type="button" onclick="Click_10()"><div id="10" class="hidden"> 0 </div>
+            <input id="t11" class="b1 s2 p11" type="button" onclick="Click_11()"><div id="11" class="hidden"> 0 </div>
+            <input id="t12" class="b1 s2 p12" type="button" onclick="Click_12()"><div id="12" class="hidden"> 0 </div>
+            <input id="t13" class="b1 s2 p13" type="button" onclick="Click_13()"><div id="13" class="hidden"> 0 </div>
+            <input id="t14" class="b1 s2 p14" type="button" onclick="Click_14()"><div id="14" class="hidden"> 0 </div>
+        </div>
+
+
+
+
+-->
